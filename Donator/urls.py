@@ -1,12 +1,12 @@
 from django.contrib import admin
 from django.urls import path
-from entry import views
+from . import views
 
 
 urlpatterns = [
-        path('post/', views.EntryList.post, name="post"),
-        path('get/', views.EntryList.get, name="get"),
-        path('add/', views.add, name="add"),
-        path('totalentrys/', views.totalentrys, name="totalentrys"),
-        path('phone/', views.number),
+        path('postSave/', views.DonatorDetailsList.postSave, name="postSave"),
+        path('changePassword/', views.DonatorDetailsList.changePassword, name="changePassword"),
+        path('donerDetails/', views.DonatorDetailsList.DonerDetails, name="donerDetails"),
+        path('update/', views.DonatorDetailsList.update, name="update"),
+        path('updateImage/', views.DonatorDetailsList.updateImage, name="updateImage"),
     ]

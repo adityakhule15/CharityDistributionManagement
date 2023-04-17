@@ -1,12 +1,10 @@
 from django.contrib import admin
 from django.urls import path
-from entry import views
+from . import views
 
 
 urlpatterns = [
-        path('post/', views.EntryList.post, name="post"),
-        path('get/', views.EntryList.get, name="get"),
-        path('add/', views.add, name="add"),
-        path('totalentrys/', views.totalentrys, name="totalentrys"),
-        path('phone/', views.number),
+        path('postSave/', views.EventDetailsList.postSave, name="postSave"),
+        path('EventDetails/', views.EventDetailsList.EventDetails, name="EventDetails"),
+        path('EventList/', views.EventDetailsList.EventList, name="EventList"),
     ]

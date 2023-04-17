@@ -12,7 +12,7 @@ from Login.serializers import LoginDetailsSerializer
 from .serializers import DonerDetailsSerializer 
 
 @csrf_exempt
-class LoginDetailsList(APIView):
+class DonatorDetailsList(APIView):
 
     def postSave(request):
         usname = request.POST.get('userName')

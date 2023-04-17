@@ -4,9 +4,7 @@ from . import views
 
 
 urlpatterns = [
-        path('post/', views.EntryList.post, name="post"),
-        path('get/', views.EntryList.get, name="get"),
-        path('add/', views.add, name="add"),
-        path('totalentrys/', views.totalentrys, name="totalentrys"),
-        path('phone/', views.number),
+        path('postSave/', views.LoginDetailsList.postSave, name="postSave"),
+        path('login/', views.LoginDetailsList.login, name="login"),
+        path('forgotPassword/', views.LoginDetailsList.forgotPassword, name="forgotPassword"),
     ]

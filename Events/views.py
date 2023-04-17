@@ -8,7 +8,7 @@ from django.views.decorators.csrf import csrf_exempt
 from .serializers import EventDetailsSerializer 
 
 @csrf_exempt
-class LoginDetailsList(APIView):
+class EventDetailsList(APIView):
 
     def postSave(request):
         prod=Event()
